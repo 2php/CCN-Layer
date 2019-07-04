@@ -1,0 +1,19 @@
+module AddressController(
+output	reg[12:0]ImageAddress,
+output	reg[3:0]FilterAddress,
+output	filterReady,
+input		clk, start);
+
+assign filterReady = (FilterAddress==8);
+
+always @ (posedge clk) begin
+	if (start) begin
+		FilterAddress <= 0;
+		ImageAddress <=0;
+	else if (!filterReady) begin
+		FilterAddress <= FilterAddress + 1;
+	end else begin
+		ImageAddress <= ImageAddress + 1;
+	end
+end
+endmodule

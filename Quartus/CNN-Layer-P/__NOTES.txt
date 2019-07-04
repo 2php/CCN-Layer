@@ -1,0 +1,18 @@
+Library missing on Simulation: altera_mf_ver
+
+FMax for ROMs: 			381.1  MHz / 240.04 MHz (restricted)
+FMAx for AddressController:	352.98 MHz / 352.98 MHz (restricted)
+Using:				200 MHz
+
+1st Skip: 4E -> 51 (correct)
+i(dec): 0 to 4637
+i(hex): 0 to 121D
+N° of iterations: 4524 ((60-2)x(80-2))
+Time: 	22620 ns (clk=200MHz) / 22,7 us
+STime:	22700 ns
+Time:	5655 ns (clk=200MHz) / 5,7 us
+STime:	5700 ns
+
+i,     i+1,     i+2
+i+w,   i+w+1,   i+w+2 
+i+w*2, i+w*2+1, i+w*2+2
